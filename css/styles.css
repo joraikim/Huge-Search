@@ -12,6 +12,11 @@ li {
 	width: 85%;
 }
 
+* {
+    
+    box-sizing: border-box;
+}
+
 
 
 
@@ -39,18 +44,21 @@ li {
 }
 
 .magnifier {
-	position: relative;
+	position: absolute;
 	width: 80px;
     height: 80px;
     text-indent: 100px;
     right: 0;
-    top: 50%;
+    top: 19%;
     background: transparent url(../images/favicon.png);
     background-size: 100%;
     border: none;
-    transform-origin: 100% 50%;
     transition: transform 0.3s;
     
+}
+
+.magnifier:hover {
+     transform : scale( 1.5 );
 }
 
 
